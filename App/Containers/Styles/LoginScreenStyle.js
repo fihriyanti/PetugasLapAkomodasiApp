@@ -8,12 +8,14 @@ export default StyleSheet.create({
     backgroundColor: '#9b0000',
     justifyContent: 'center',
     alignContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   logo: {
     height: Metrics.images.logo,
     width: Metrics.images.ikon,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+    marginLeft: 20,
+    marginRight: 20,
   },
   teks: {
     fontSize: 18,
