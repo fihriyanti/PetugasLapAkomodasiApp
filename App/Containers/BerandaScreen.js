@@ -41,7 +41,7 @@ class BerandaScreen extends Component {
                   <Icon type='MaterialIcons' name='account-circle'/>
                 </CardItem>
                 <CardItem>
-                  <Text onPress={() => { this.props.navigation.navigate('AkomodasiKontingenScreen')}}>Kontingen</Text>
+                  <Text onPress={() => { this.props.navigation.navigate('BerandaTabScreen')}}>Kontingen</Text>
                 </CardItem>
               </Card>
               <Card style={styles.card}>

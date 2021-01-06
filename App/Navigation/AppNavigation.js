@@ -1,13 +1,8 @@
 import { createAppContainer } from 'react-navigation'
-import KontingenScreen from '../Containers/KontingenScreen'
-import HotelScreen from '../Containers/HotelScreen'
-import CaborScreen from '../Containers/CaborScreen'
-import SearchScreen from '../Containers/SearchScreen'
-import AkomodasiKontingenScreen from '../Containers/AkomodasiKontingenScreen'
+import BerandaTabScreen from '../Containers/BerandaTabScreen'
 import BerandaScreen from '../Containers/BerandaScreen'
 import SplashScreen from '../Containers/SplashScreen'
 import LoginScreen from '../Containers/LoginScreen'
-import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import LaunchScreen from '../Containers/LaunchScreen'
 // import Ionicons from 'react-native-vector-icons/Ionicons'
@@ -53,7 +48,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
-  AkomodasiKontingenScreen: { screen: AkomodasiKontingenScreen},
+  BerandaTabScreen: { screen: BerandaTabScreen},
   BerandaScreen: { screen: BerandaScreen },
   SplashScreen: { screen: SplashScreen },
   LoginScreen: { screen: LoginScreen },
