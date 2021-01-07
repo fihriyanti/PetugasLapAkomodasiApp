@@ -1,6 +1,9 @@
 import { Card, Icon, Item } from 'native-base'
 import React, { Component } from 'react'
-import { ScrollView, Text, View } from 'react-native'
+import { ScrollView, Text, View, Modal } from 'react-native'
+import { Button } from 'native-base'
+// import CalendarPicker from 'react-native-calendar-picker';
+import { Calendar } from 'react-native-calendars';
 
 import CardBooked from '../Components/CardBooked'
 import CardInRoom from '../Components/CardInRoom'
@@ -12,7 +15,26 @@ import CardKedatangan from '../Components/CardKedatangan'
 import styles from './Styles/AkomodasiKontingenScreenStyle'
 
 export default class AkomodasiKontingenScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+
+            selectedStartDate: null,
+        };
+        this.onDateChange = this.onDateChange.bind(this);
+    }
+
+    onDateChange(date) {
+        this.setState({
+            selectedStartDate: date,
+        });
+    }
+
     render() {
+        const { selectedStartDate } = this.state;
+        const startDate = selectedStartDate ? selectedStartDate.toString().substr(4, 12) : '';
+
         return (
             <ScrollView>
                 <View style={styles.konten}>
@@ -40,7 +62,9 @@ export default class AkomodasiKontingenScreen extends Component {
                     <Item style={styles.search}>
                         <Icon type='MaterialIcons' name='search' style={{ marginLeft: 310 }} />
                     </Item>
-                    <Icon type='FontAwesome' name='calendar-o' style={{ marginLeft: 10, marginTop: 5 }} />
+                    <Icon type='FontAwesome' name='calendar-o' style={{ marginLeft: 10, marginTop: 5 }}
+                        onPress={() => this.setState({ show: true })}
+                    />
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 20, marginHorizontal: 20 }}>
                     <View style={{ flexDirection: 'column' }}>
@@ -92,7 +116,7 @@ export default class AkomodasiKontingenScreen extends Component {
                         <Icon type='AntDesign' name='right' style={{ fontSize: 20, marginLeft: 10 }} />
                     </View>
                 </View>
-                <View style={{marginLeft: 20, marginTop: 10}}>
+                <View style={{ marginLeft: 20, marginTop: 10 }}>
                     <CardKedatangan
                         namaProvinsi='Aceh'
                         namaHotel='Asrama Sentra Pendidikan'
@@ -112,6 +136,25 @@ export default class AkomodasiKontingenScreen extends Component {
                         namaCabor='Bola Tangan'
                     />
                 </View>
+                <Modal transparent={true} visible={this.state.show}>
+                    <View style={styles.bgModal}>
+                        <View style={styles.modal}>
+                            <Calendar
+                                todayBackgroundColor="#e6ffe6"
+                                selectedDayColor="#66ff33"
+                                onDayPress={(startDate) => 
+                                    {this.setState({show: false})
+                                    {console.log(startDate.month + startDate.day, startDate)}}}
+                                theme= {
+                                    {
+                                        todayTextColor: '#ffffff',
+                                        todayBackgroundColor: '#f58634',
+                                    }
+                                }
+                            />
+                        </View>
+                    </View>
+                </Modal>
             </ScrollView>
         )
     }

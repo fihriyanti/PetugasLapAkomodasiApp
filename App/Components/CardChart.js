@@ -13,32 +13,24 @@ class CardChart extends Component {
                 <CardItem header>
                     <Text style={styles.headCard}>Persentase Penerima Kunci</Text>
                 </CardItem>
-                <CardItem body>
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                <CardItem body style={{justifyContent: 'space-between'}}>
+                    <View style={{ flexDirection: 'row' }}>
                         <View style={{ flexDirection: 'column' }}>
                             <Text>Sudah Terima Kunci</Text>
                             <Text style={styles.angkaS}>75%</Text>
                         </View>
                         <View>
                             <Pie
-                                radius={80}
-                                innerRadius={50}
+                                radius={50}
+                                innerRadius={30}
                                 sections={[
                                     {
-                                        percentage: 10,
-                                        color: '#C70039',
+                                        percentage: 25,
+                                        color: '#ee5555',
                                     },
                                     {
-                                        percentage: 20,
-                                        color: '#44CD40',
-                                    },
-                                    {
-                                        percentage: 30,
-                                        color: '#404FCD',
-                                    },
-                                    {
-                                        percentage: 40,
-                                        color: '#EBD22F',
+                                        percentage: 75,
+                                        color: '#52d0ff',
                                     },
                                 ]}
                                 strokeCap={'butt'}
