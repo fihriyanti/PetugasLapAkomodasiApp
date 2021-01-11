@@ -32,19 +32,16 @@ export default StyleSheet.create({
     fontSize: 18,
   },
   search: {
+    width: '90%',
       backgroundColor: '#f4f5f7',
       height: 45,
       borderRadius: 20,
+      justifyContent: 'flex-end'
   },
   see: {
     color: '#959595',
     fontSize: 18,
     fontWeight: 'bold',
-  },
-  ikon: {
-    height: Metrics.images.large,
-    width: Metrics.images.large,
-    alignSelf: 'flex-end'
   },
   modal: {
       justifyContent: 'center',

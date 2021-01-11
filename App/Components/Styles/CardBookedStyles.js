@@ -4,7 +4,7 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
     ...ApplicationStyles.screen,
     card: {
-        width: 380,
+        width: '100%',
         height: 120,
         backgroundColor: '#f4f5f7',
         padding: 10,

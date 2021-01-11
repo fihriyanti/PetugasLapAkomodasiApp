@@ -9,41 +9,37 @@ export default StyleSheet.create({
   konten: {
     backgroundColor: '#bf272b',
     width: '100%',
-    height: 100,
-  },
-  iconBack: {
-    fontSize: 35, 
-    fontWeight: 'bold', 
-    color: 'white',
+    padding: 15,
   },
   teks: {
-    color: 'white', 
-    marginLeft: 20, 
-    fontSize: 25, 
-    fontWeight: 'bold',
-  },
-  card: {
+    color: 'white',
     marginLeft: 20,
-    marginRight: 20,
-    borderRadius: 20,
-  },
-  nama: {
+    fontSize: 25,
     fontWeight: 'bold',
-    fontSize: 18,
-  },
-  search: {
-      backgroundColor: '#f4f5f7',
-      height: 45,
-      borderRadius: 20,
   },
   see: {
     color: '#959595',
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: 'bold',
   },
+  search: {
+    marginTop: 10,
+    backgroundColor: '#f4f5f7',
+    height: 45,
+    borderRadius: 20,
+    justifyContent: 'flex-end'
+  },
+  cardCabor: {
+    width: '30%',
+    height: 100,
+    padding: 5,
+    backgroundColor: '#f4f5f7',
+    borderRadius: 10,
+  },
   ikon: {
-    height: Metrics.images.large,
-    width: Metrics.images.large,
-    alignSelf: 'flex-end'
+    height: Metrics.images.medium,
+    width: Metrics.images.medium,
+    alignSelf: 'center',
+    marginTop: 5
   },
 })

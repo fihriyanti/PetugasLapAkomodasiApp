@@ -42,6 +42,6 @@ export default StyleSheet.create({
     borderRadius: 10,
     backgroundColor: 'grey',
     width: 110,
-    marginBottom: 30,
+    marginBottom: 20
   },
 })

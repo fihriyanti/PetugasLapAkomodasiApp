@@ -4,7 +4,7 @@ import { ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
     ...ApplicationStyles.screen,
     card2: {
-        marginTop: 30,
+        marginTop: 10,
         borderRadius: 10,
         backgroundColor: 'grey',
     },

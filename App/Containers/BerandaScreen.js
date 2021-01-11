@@ -29,8 +29,9 @@ class BerandaScreen extends Component {
                 <Text style={styles.kabTxt}>Kabupaten Mimika</Text>
               </View>
               <View>
-                <Icon type='MaterialIcons' name='account-circle'
-                  style={{ fontSize: 40 }}
+                <Icon type='Entypo' name='login'
+                  style={{ fontSize: 40, color: '#ff0000' }}
+                  onPress={() => this.props.navigation.navigate('AkunSayaScreen')}
                 />
               </View>
             </View>

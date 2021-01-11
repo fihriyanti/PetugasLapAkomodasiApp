@@ -8,7 +8,7 @@ import styles from './Styles/CardKedatanganStyles'
 const CardKedatangan = (props) => {
     return (
         <Card style={styles.card}>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                 <View style={{ flexDirection: 'column' }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Image source={Images.imgCard} style={styles.ikon} />
@@ -22,7 +22,7 @@ const CardKedatangan = (props) => {
                         <Text>{props.jam}</Text>
                     </View>
                 </View>
-                <View style={{ flexDirection: 'column', marginLeft: 50 }}>
+                <View style={{ flexDirection: 'column'}}>
                     <Image source={Images.imgCard} style={styles.ikon} />
                     <Text style={{ marginTop: 10, fontWeight: 'bold' }}>{props.namaCabor}</Text>
                 </View>

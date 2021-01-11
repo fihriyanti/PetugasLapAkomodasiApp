@@ -58,9 +58,11 @@ export default class AkomodasiKontingenScreen extends Component {
                         <Icon type='MaterialIcons' name='history' style={{ marginTop: 10 }} />
                     </View>
                 </Card>
-                <View style={{ flexDirection: 'row', marginLeft: 20, marginTop: 10 }}>
+                <View style={{ flexDirection: 'row', marginHorizontal: 20, marginTop: 10, justifyContent: 'space-between'}}>
                     <Item style={styles.search}>
-                        <Icon type='MaterialIcons' name='search' style={{ marginLeft: 310 }} />
+                        <Icon type='MaterialIcons' name='search' 
+                            onPress={() => this.props.navigation.navigate('JadwalAkomodasiScreen')}
+                        />
                     </Item>
                     <Icon type='FontAwesome' name='calendar-o' style={{ marginLeft: 10, marginTop: 5 }}
                         onPress={() => this.setState({ show: true })}
@@ -73,25 +75,39 @@ export default class AkomodasiKontingenScreen extends Component {
                     </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
                         <Text>Lihat semua</Text>
-                        <Icon type='AntDesign' name='right' style={{ fontSize: 20, marginLeft: 10 }} />
+                        <Icon type='AntDesign' name='right' style={{ fontSize: 20, marginLeft: 10 }}
+                            onPress={() => this.props.navigation.navigate('KedatanganScreen')}
+                        />
                     </View>
                 </View>
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
                     style={{ marginLeft: 20, marginTop: 10 }}>
-                    <CardBooked
-                        namaProvinsi='DKI Jakarta'
-                        namaHotel='Hotel Serayu Timika'
-                        jam='10:00 WIT'
-                        namaCabor='Bola Basket 5 x 5'
-                    />
-                    <CardInRoom
-                        namaProvinsi='Aceh'
-                        namaHotel='Hotel Serayu Timika'
-                        jam='12:00 WIT'
-                        namaCabor='Bola Tangan'
-                    />
+                    <View style={{ marginRight: 10 }}>
+                        <CardBooked
+                            namaProvinsi='DKI Jakarta'
+                            namaHotel='Hotel Serayu Timika'
+                            jam='10:00 WIT'
+                            namaCabor='Bola Basket 5 x 5'
+                        />
+                    </View>
+                    <View style={{ marginRight: 10 }}>
+                        <CardInRoom
+                            namaProvinsi='Aceh'
+                            namaHotel='Hotel Serayu Timika'
+                            jam='12:00 WIT'
+                            namaCabor='Bola Tangan'
+                        />
+                    </View>
+                    <View style={{ marginRight: 10 }}>
+                        <CardBooked
+                            namaProvinsi='DKI Jakarta'
+                            namaHotel='Hotel Serayu Timika'
+                            jam='10:00 WIT'
+                            namaCabor='Bola Basket 5 x 5'
+                        />
+                    </View>
                 </ScrollView>
                 <View style={{ marginHorizontal: 20, flexDirection: 'row' }}>
                     <Text style={{ fontSize: 20, color: '#bdbdbd' }}>⬤</Text>
@@ -113,10 +129,12 @@ export default class AkomodasiKontingenScreen extends Component {
                     <Text style={styles.see}>Jadwal Kedatangan Besok</Text>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Text>Lihat semua</Text>
-                        <Icon type='AntDesign' name='right' style={{ fontSize: 20, marginLeft: 10 }} />
+                        <Icon type='AntDesign' name='right' style={{ fontSize: 20, marginLeft: 10 }} 
+                            onPress={() => this.props.navigation.navigate('JadwalBesokScreen')}
+                        />
                     </View>
                 </View>
-                <View style={{ marginLeft: 20, marginTop: 10 }}>
+                <View style={{ marginHorizontal: 20, marginTop: 10 }}>
                     <CardKedatangan
                         namaProvinsi='Aceh'
                         namaHotel='Asrama Sentra Pendidikan'
@@ -142,10 +160,11 @@ export default class AkomodasiKontingenScreen extends Component {
                             <Calendar
                                 todayBackgroundColor="#e6ffe6"
                                 selectedDayColor="#66ff33"
-                                onDayPress={(startDate) => 
-                                    {this.setState({show: false})
-                                    {console.log(startDate.month + startDate.day, startDate)}}}
-                                theme= {
+                                onDayPress={(startDate) => {
+                                    this.setState({ show: false })
+                                    { console.log(startDate.month + startDate.day, startDate) }
+                                }}
+                                theme={
                                     {
                                         todayTextColor: '#ffffff',
                                         todayBackgroundColor: '#f58634',

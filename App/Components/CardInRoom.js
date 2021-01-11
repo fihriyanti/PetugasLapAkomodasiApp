@@ -8,7 +8,7 @@ import styles from './Styles/CardInRoomStyles'
 const CardInRoom = (props) => {
     return (
         <Card style={styles.card}>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                 <View style={{ flexDirection: 'column' }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Image source={Images.imgCard} style={styles.ikon} />
@@ -25,7 +25,7 @@ const CardInRoom = (props) => {
                         </View>
                     </View>
                 </View>
-                <View style={{ flexDirection: 'column', marginLeft: 70 }}>
+                <View style={{ flexDirection: 'column' }}>
                     <Image source={Images.imgCard} style={styles.ikon} />
                     <Text style={{ marginTop: 10, fontWeight: 'bold' }}>{props.namaCabor}</Text>
                 </View>

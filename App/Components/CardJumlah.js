@@ -7,7 +7,7 @@ import styles from '../Components/Styles/CardJumlahStyles'
 class CardJumlah extends Component {
     render() {
         return (
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
                 <Card style={styles.card3}>
                     <CardItem header>
                         <Text style={styles.headCard}>Jumlah Cabor yang sudah terima</Text>
@@ -23,7 +23,7 @@ class CardJumlah extends Component {
                                 <View style={{ flexDirection: 'row', marginLeft: 5 }}>
                                     <Text style={{ fontSize: 18, marginTop: 5 }}>####</Text>
                                     <View style={{ flexDirection: 'column', marginLeft: 5 }}>
-                                        <Text>▪ Cabor yang</Text>
+                                        <Text>Cabor yang</Text>
                                         <Text>sudah terima</Text>
                                     </View>
                                 </View>

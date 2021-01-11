@@ -1,12 +1,8 @@
-import { Card, Icon, Item } from 'native-base'
+import { Icon, Item, Card } from 'native-base'
 import React, { Component } from 'react'
-import { ScrollView, Text, View } from 'react-native'
+import { ScrollView, Text, View, Image, Modal } from 'react-native'
 
-import CardBooked from '../Components/CardBooked'
-import CardInRoom from '../Components/CardInRoom'
-import CardChart from '../Components/CardChart'
-import CardJumlah from '../Components/CardJumlah'
-import CardKedatangan from '../Components/CardKedatangan'
+import images from '../Themes/Images'
 
 // Styles
 import styles from './Styles/CaborScreenStyle'
@@ -16,13 +12,85 @@ export default class CaborScreen extends Component {
         return (
             <ScrollView>
                 <View style={styles.konten}>
-                    <View style={styles.container}>
-                        <View style={{ flexDirection: 'row' }}>
-                            <Icon type='AntDesign' name='arrowleft'
-                                style={styles.iconBack}
+                    <Text style={styles.teks}>CABOR</Text>
+                </View>
+                <View style={styles.container}>
+                    <View>
+                        <Text style={styles.see}>Search Cabor you are looking for?</Text>
+                        <Item style={styles.search}>
+                            <Icon type='MaterialIcons' name='search' />
+                        </Item>
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon}
                             />
-                            <Text style={styles.teks}>CABOR</Text>
-                        </View>
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
+                        </Card>
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Perairan Terbuka</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Polo Air</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Artistik</Text>
+                        </Card>
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
+                        </Card>
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Perairan Terbuka</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Polo Air</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Artistik</Text>
+                        </Card>
+                    </View>
+                    <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
+                        </Card>
+                        <Card style={styles.cardCabor}>
+                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
+                        </Card>
                     </View>
                 </View>
             </ScrollView>
