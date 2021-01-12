@@ -1,4 +1,6 @@
 import { createAppContainer } from 'react-navigation'
+import RincianAlokasiCaborScreen from '../Containers/RincicanAlokasiCaborScreen'
+import AlokasiCaborScreen from '../Containers/AlokasiCaborScreen'
 import JadwalAkomodasiScreen from '../Containers/JadwalAkomodasiScreen'
 import JadwalBesokScreen from '../Containers/JadwalBesokScreen'
 import KedatanganScreen from '../Containers/KedatanganScreen'
@@ -14,6 +16,8 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
+  RincianAlokasiCaborScreen: { screen: RincianAlokasiCaborScreen },
+  AlokasiCaborScreen: { screen: AlokasiCaborScreen },
   JadwalAkomodasiScreen: { screen: JadwalAkomodasiScreen },
   JadwalBesokScreen: { screen: JadwalBesokScreen },
   KedatanganScreen: { screen: KedatanganScreen },

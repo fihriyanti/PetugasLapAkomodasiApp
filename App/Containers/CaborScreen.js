@@ -1,4 +1,4 @@
-import { Icon, Item, Card } from 'native-base'
+import { Icon, Item, Card, } from 'native-base'
 import React, { Component } from 'react'
 import { ScrollView, Text, View, Image, Modal } from 'react-native'
 
@@ -8,6 +8,13 @@ import images from '../Themes/Images'
 import styles from './Styles/CaborScreenStyle'
 
 export default class CaborScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+        }
+    }
+
     render() {
         return (
             <ScrollView>
@@ -23,76 +30,107 @@ export default class CaborScreen extends Component {
                     </View>
                     <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon}
+                            <Image source={images.logoAnggar} style={styles.ikon}
                             />
-                            <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
+                            <Text style={{ textAlign: 'center', marginTop: 10 }}
+                                onPress={() => this.setState({ show: true })}
+                            >Anggar</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
                         </Card>
                     </View>
                     <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Perairan Terbuka</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Polo Air</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Artistik</Text>
                         </Card>
                     </View>
                     <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
                         </Card>
                     </View>
                     <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Perairan Terbuka</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Polo Air</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Renang Artistik</Text>
                         </Card>
                     </View>
                     <View style={{ marginTop: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Anggar</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAnggar} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Angkat Besi</Text>
                         </Card>
                         <Card style={styles.cardCabor}>
-                            <Image source={images.imgCard} style={styles.ikon} />
+                            <Image source={images.logoAngkatBesi} style={styles.ikon} />
                             <Text style={{ textAlign: 'center', marginTop: 10 }}>Loncat Indah</Text>
                         </Card>
                     </View>
                 </View>
+                <Modal transparent={true} visible={this.state.show}>
+                    <View style={styles.bgModal}>
+                        <View style={styles.modal}>
+                            <Text onPress={() => this.setState({ show: false })}
+                                style={styles.see}
+                            >
+                                Klik salah satu hotel
+                            </Text>
+                            <View style={{flexDirection: 'row', marginTop: 10}}>
+                                <Icon type='Octicons' name='primitive-dot' style={{color: '#bdbdbd', fontSize: 20}}/>
+                                <Text style={{marginLeft: 5, fontSize: 15}}
+                                    onPress={() => {
+                                        this.props.navigation.navigate('AlokasiCaborScreen');
+                                        this.setState({ show: false })
+                                    }}
+                                >Aston Hotel Jayapura</Text>
+                            </View>
+                            <View style={{flexDirection: 'row', marginTop: 10}}>
+                                <Icon type='Octicons' name='primitive-dot' style={{color: '#bdbdbd', fontSize: 20, marginTop: 5}}/>
+                                <Text style={{marginLeft: 5, fontSize: 15}}
+                                    onPress={() => {
+                                        this.props.navigation.navigate('AlokasiCaborScreen');
+                                        this.setState({ show: false })
+                                    }}
+                                >Sunny Garden Lake Hotel and Resort Manage by Parkside</Text>
+                            </View>
+                        </View>
+                    </View>
+                </Modal>
             </ScrollView>
         )
     }

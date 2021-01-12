@@ -42,4 +42,17 @@ export default StyleSheet.create({
     alignSelf: 'center',
     marginTop: 5
   },
+  modal: {
+      justifyContent: 'center',
+      backgroundColor: '#fff',
+      borderRadius: 20,
+      marginLeft: 50,
+      marginRight: 50,
+      padding: 15
+  },
+  bgModal: {
+      backgroundColor: '#9e9e9eaa',
+      flex: 1,
+      justifyContent: 'center',
+  },
 })

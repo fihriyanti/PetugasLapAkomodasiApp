@@ -33,71 +33,71 @@ export default class SearchScreen extends Component {
                             >
                                 <View style={{marginTop: 10, flexDirection: 'row', justifyContent: 'space-around'}}>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Anggar</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAngkatBesi} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Angkat Besi</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Loncat Indah</Text>
                                     </Card>
                                 </View>
                                 <View style={{marginTop: 10, flexDirection: 'row', justifyContent: 'space-around'}}>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Renang Perairan Terbuka</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAngkatBesi} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Polo Air</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Renang Artistik</Text>
                                     </Card>
                                 </View>
                                 <View style={{marginTop: 10, flexDirection: 'row', justifyContent: 'space-around'}}>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Anggar</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAngkatBesi} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Angkat Besi</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Loncat Indah</Text>
                                     </Card>
                                 </View>
                                 <View style={{marginTop: 10, flexDirection: 'row', justifyContent: 'space-around'}}>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Anggar</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAngkatBesi} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Angkat Besi</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Loncat Indah</Text>
                                     </Card>
                                 </View>
                                 <View style={{marginTop: 10, flexDirection: 'row', justifyContent: 'space-around'}}>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Anggar</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAngkatBesi} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Angkat Besi</Text>
                                     </Card>
                                     <Card style={styles.cardCabor}>
-                                        <Image source={images.imgCard} style={styles.ikon}/>
+                                        <Image source={images.logoAnggar} style={styles.ikon}/>
                                         <Text style={{textAlign: 'center', marginTop: 10}}>Loncat Indah</Text>
                                     </Card>
                                 </View>

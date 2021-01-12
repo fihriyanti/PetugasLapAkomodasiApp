@@ -1,5 +1,8 @@
 // leave off @2x/@3x
 const images = {
+  logoAnggar: require('../Images/logo_anggar.png'),
+  logoAngkatBesi: require('../Images/logo_angkatbesi.png'),
+  logoPapua: require('../Images/papua.png'),
   ikon: require('../Images/logo-pon.png'),
   imgCard:require('../Images/dki_jakarta.png'),
   logo: require('../Images/ir.png'),
